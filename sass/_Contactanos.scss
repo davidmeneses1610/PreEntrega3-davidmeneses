@@ -1,0 +1,207 @@
+.header_5 {
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+    height: 125vh;
+    display: flex;
+    flex-direction: column;
+
+    nav {
+        background-color: $color1;
+        height: 10vh;
+        width: 100%;
+        display: grid;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 5%;
+        @include box-shadow(0px, 5px, 16px, -3px, rgba(0, 0, 0, 0.75));
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            li {
+                margin-right: 5%;
+
+                a {
+                    color: $color3;
+                    text-decoration: none;
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                    transition: all 0.3s ease;
+                    padding: 10px;
+                    border-radius: 50px;
+
+                    &:hover {
+                        background-color: #faddf6;
+                        color: #333;
+                    }
+                }
+            }
+        }
+
+        @media only screen and (max-width: 600px) {
+            ul {
+                li {
+                    margin-right: 3%;
+
+                    a {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+
+        @media only screen and (max-width: 400px) {
+            ul {
+                li {
+                    margin-right: 1%;
+
+                    a {
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+    }
+
+    h1 {
+        font-family: $font1;
+        font-size: 4rem;
+        text-align: center;
+        margin-top: 5%;
+        margin-bottom: 3%;
+
+        @media only screen and (max-width: 600px) {
+            font-size: 3rem;
+            margin-top: 10%;
+        }
+
+        @media only screen and (max-width: 400px) {
+            font-size: 2rem;
+            margin-top: 15%;
+        }
+    }
+
+    p {
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 0 auto;
+        width: 80%;
+
+        @media only screen and (max-width: 600px) {
+            font-size: 1rem;
+            margin-top: 5%;
+            width: 90%;
+        }
+    }
+
+}
+
+.formsection {
+    margin: 0;
+
+    form {
+        margin: 0 auto;
+        width: 80%;
+
+        label {
+            font-size: 20px;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        input,
+        select,
+        textarea {
+            font-size: 18px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 12px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .formsection {
+        form {
+            width: 90%;
+
+            label {
+                font-size: 16px;
+            }
+
+            input,
+            select,
+            textarea {
+                font-size: 16px;
+            }
+
+            input[type="submit"] {
+                font-size: 14px;
+                padding: 10px 20px;
+            }
+        }
+    }
+}
+
+.faq-section {
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+    padding: 50px 0;
+    margin-top: 0px;
+
+
+    h2 {
+        font-size: 2.5rem;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .faq {
+        display: flex;
+        flex-direction: column;
+
+        .pregunta {
+            margin-bottom: 30px;
+
+            h3 {
+                font-size: 1.8rem;
+                margin-bottom: 15px;
+            }
+
+            p {
+                font-size: 1.4rem;
+            }
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        .faq {
+            flex-direction: row;
+            justify-content: space-between;
+
+            .pregunta {
+                width: 30%;
+            }
+        }
+    }
+}
+
+@import "_SobreNosotros.scss"

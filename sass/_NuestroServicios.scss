@@ -1,0 +1,55 @@
+#services {
+  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+    text-align: center;
+    padding: 60px 20px;
+  
+    h1 {
+      font-size: 40px;
+      margin-bottom: 30px;
+    }
+  
+    .service {
+      margin-bottom: 40px;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+      text-align: left;
+      transition: all 0.2s ease-in-out;
+  
+      h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+  
+      p {
+        font-size: 16px;
+        line-height: 1.5;
+        margin: 0;
+      }
+  
+      &:hover {
+        box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+        transform: translateY(-5px);
+      }
+    }
+  
+    @media (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+  
+      .service {
+        width: calc(33.33% - 20px);
+      }
+    }
+  
+    @media (min-width: 1200px) {
+      .service {
+        width: calc(25% - 20px);
+      }
+    }
+  }
+
+  @import "_Contactanos"

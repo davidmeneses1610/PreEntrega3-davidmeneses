@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Climate+Crisis&family=PT+Serif:ital,wght@1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@1,700&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #171738;
+  background-size: cover;
+  font-family: serif;
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+body header nav {
+  background-color: #333;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+}
+body header nav ul {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0 45px;
+  display: flex;
+}
+body header nav ul li {
+  margin-right: 120px;
+}
+body header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  padding: 10px;
+  border-radius: 50px;
+}
+body header nav ul li a:hover {
+  background-color: #fff;
+  color: #333;
+}
+body h1 {
+  padding: 0cap;
+}/*# sourceMappingURL=styles.css.map */
