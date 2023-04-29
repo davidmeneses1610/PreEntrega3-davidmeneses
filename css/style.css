@@ -309,6 +309,8 @@ body footer ul li a {
 
 body {
   background-color: #fbc2eb;
+  padding: 0;
+  margin: 0%;
 }
 
 .header_5 {
